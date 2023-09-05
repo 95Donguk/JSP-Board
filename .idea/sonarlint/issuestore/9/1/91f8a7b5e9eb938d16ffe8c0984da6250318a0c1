@@ -1,0 +1,11 @@
+
+c
+java:S1192V"FDefine a constant instead of duplicating this literal "TITLE" 3 times.(Ÿ¶ÖÆ8Ç´Ñý¥1
+j
+java:S1192X"HDefine a constant instead of duplicating this literal "CONTENT" 3 times.(ÆðóÊþÿÿÿÿ8Ç´Ñý¥1
+`
+java:S1117?">Rename "connection" which hides the field declared at line 29.(‚‹óçýÿÿÿÿ8Ò´Ñý¥1
+_
+java:S1117@"=Rename "statement" which hides the field declared at line 30.(¡Ÿ‹‰ùÿÿÿÿ8Ò´Ñý¥1
+P
+java:S1068".Remove this unused "BOARD_LIST" private field.(å²Ç”üÿÿÿÿ8Ù´Ñý¥1

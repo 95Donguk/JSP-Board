@@ -1,0 +1,23 @@
+
+SWeb:UnsupportedTagsInHtml5Check"(Remove this deprecated "center" element.(¡á€Ò
+HWeb:TableWithoutCaptionCheck	" Add a description to this table.(ÀËœþ
+:	Web:S5256	"%Add "<th>" headers to this "<table>".(ÀËœþ
+D	Web:S1827	"/Remove this deprecated "cellpadding" attribute.(ÀËœþ
+D	Web:S1827	"/Remove this deprecated "cellspacing" attribute.(ÀËœþ
+>	Web:S1827	")Remove this deprecated "width" attribute.(ÀËœþ
+>	Web:S1827")Remove this deprecated "align" attribute.(ÁõÈÈ
+HWeb:TableWithoutCaptionCheck" Add a description to this table.(°ÑŒ¦
+D	Web:S1827"/Remove this deprecated "cellspacing" attribute.(°ÑŒ¦
+D	Web:S1827"/Remove this deprecated "cellpadding" attribute.(°ÑŒ¦
+>	Web:S1827")Remove this deprecated "width" attribute.(°ÑŒ¦
+E	Web:S1827"+Remove this deprecated "bgcolor" attribute.(Ä‡Èáþÿÿÿÿ
+C	Web:S1827")Remove this deprecated "width" attribute.(Ä‡Èáþÿÿÿÿ
+E	Web:S1827"+Remove this deprecated "bgcolor" attribute.(ÓöÑÍùÿÿÿÿ
+C	Web:S1827")Remove this deprecated "width" attribute.(ÓöÑÍùÿÿÿÿ
+E	Web:S1827"+Remove this deprecated "bgcolor" attribute.(”®Ê°øÿÿÿÿ
+C	Web:S1827")Remove this deprecated "width" attribute.(”®Ê°øÿÿÿÿ
+?	Web:S1827 "+Remove this deprecated "bgcolor" attribute.(¦“É>
+=	Web:S1827 ")Remove this deprecated "width" attribute.(¦“É>
+E	Web:S1827!"+Remove this deprecated "bgcolor" attribute.(å´»Šúÿÿÿÿ
+C	Web:S1827!")Remove this deprecated "width" attribute.(å´»Šúÿÿÿÿ
+C	Web:S1827&")Remove this deprecated "align" attribute.(˜ËäÉüÿÿÿÿ

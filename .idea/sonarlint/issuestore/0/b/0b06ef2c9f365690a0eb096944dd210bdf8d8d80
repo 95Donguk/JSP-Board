@@ -1,0 +1,25 @@
+
+j
+java:S1192G"MDefine a constant instead of duplicating this literal "Message : {}" 5 times.(Ÿ„ªÏ8úŸİı¥1
+r
+java:S1192F"PDefine a constant instead of duplicating this literal "Error Code : {}" 5 times.(é…Åüÿÿÿÿ8úŸİı¥1
+u	java:S116"TRename this field "USER_LIST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±êŸ¤üÿÿÿÿ8Š İı¥1
+w	java:S116"VRename this field "USER_INSERT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÑä—şÿÿÿÿ8Š İı¥1
+w	java:S116 "VRename this field "USER_UPDATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óº™Ÿüÿÿÿÿ8Š İı¥1
+w	java:S116!"VRename this field "USER_DELETE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ù¬ùÿÿÿÿ8Š İı¥1
+o	java:S116""SRename this field "USER_GET" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÌÑ8Š İı¥1
+C
+java:S1170"!Make this final field static too.(±êŸ¤üÿÿÿÿ8Š İı¥1
+C
+java:S1170"!Make this final field static too.(ÜÑä—şÿÿÿÿ8Š İı¥1
+C
+java:S1170 "!Make this final field static too.(Óº™Ÿüÿÿÿÿ8‹ İı¥1
+C
+java:S1170!"!Make this final field static too.(–ù¬ùÿÿÿÿ8‹ İı¥1
+>
+java:S1170""!Make this final field static too.(ùÌÑ8‹ İı¥1
+`
+java:S1117@">Rename "connection" which hides the field declared at line 25.(‚‹óçıÿÿÿÿ8“ İı¥1
+_
+java:S1117A"=Rename "statement" which hides the field declared at line 26.(Ššáëûÿÿÿÿ8“ İı¥1
+G	java:S106"+Replace this use of System.out by a logger.(‹÷¸Y8‘´œş¥1

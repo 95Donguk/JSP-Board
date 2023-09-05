@@ -1,0 +1,16 @@
+
+SWeb:UnsupportedTagsInHtml5Check"(Remove this deprecated "center" element.(¡á€Ò
+MWeb:TableWithoutCaptionCheck" Add a description to this table.(ùÊ«¼ûÿÿÿÿ
+?	Web:S5256"%Add "<th>" headers to this "<table>".(ùÊ«¼ûÿÿÿÿ
+I	Web:S1827"/Remove this deprecated "cellspacing" attribute.(ùÊ«¼ûÿÿÿÿ
+I	Web:S1827"/Remove this deprecated "cellpadding" attribute.(ùÊ«¼ûÿÿÿÿ
+@	Web:S1827
+"+Remove this deprecated "bgcolor" attribute.(ªÂÂ
+>	Web:S1827
+")Remove this deprecated "width" attribute.(ªÂÂ
+>	Web:S1827")Remove this deprecated "align" attribute.(÷ÆÛ«
+E	Web:S1827"+Remove this deprecated "bgcolor" attribute.(Üœ¼ˆÿÿÿÿÿ
+C	Web:S1827")Remove this deprecated "align" attribute.(µµßÝùÿÿÿÿ
+@	Web:S1827"+Remove this deprecated "bgcolor" attribute.(Ãêˆ×
+>	Web:S1827")Remove this deprecated "align" attribute.(éÆ‰Û
+C	Web:S1827")Remove this deprecated "align" attribute.(»¡å¬ýÿÿÿÿ
