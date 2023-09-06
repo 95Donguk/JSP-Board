@@ -12,6 +12,11 @@
     padding: 10px;
 }
 
+.header {
+    margin: 10px auto 10px;
+    padding: 10px 30px;
+}
+
 .welcome-div {
     width: 100%;
     max-width: 540px;
@@ -94,11 +99,36 @@ ul li span:hover {
     background: #edeef0;
 }
 
-a {
+div > a {
     padding: 10px 30px;
     background: #ff5945;
     color: #fff;
     font-size: 1em;
     cursor: pointer;
     border-radius: 20px;
+}
+
+.range {
+    margin: 0 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.range:hover {
+    opacity: 0.6;
+}
+
+.page-box {
+    width: 200px;
+    text-align: center;
+}
+
+.page-prev {
+    width: 80px;
+    text-align: left;
+}
+
+.page-next {
+    width: 80px;
+    text-align: right;
 }

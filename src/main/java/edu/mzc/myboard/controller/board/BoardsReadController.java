@@ -1,5 +1,6 @@
 package edu.mzc.myboard.controller.board;
 
+import edu.mzc.myboard.domain.board.Page;
 import edu.mzc.myboard.dto.BoardDTO;
 import edu.mzc.myboard.service.BoardService;
 import lombok.extern.slf4j.Slf4j;
@@ -18,6 +19,8 @@ public class BoardsReadController implements BoardController {
         // 1. 사용자 입력 정보 추출
         String searchCondition = paramMap.get("searchCondition");
         String searchKeyword = paramMap.get("searchKeyword");
+        String page = paramMap.get("page");
+        int pageNumber = (page == null) ? 1 : Integer.parseInt(page);
 
         // Null Check
         if (searchCondition == null) searchCondition = "TITLE";
@@ -34,10 +37,10 @@ public class BoardsReadController implements BoardController {
         dto.setSearchKeyword(searchKeyword);
 
         BoardService service = new BoardService();
-        List<BoardDTO> boardList = service.readAll(dto);
+        Page<BoardDTO> boardPage = service.readAll(dto, pageNumber);
 
         // 3. 화면 이동
-        model.put("boardList", boardList);
+        model.put("boardPage", boardPage);
         return VIEW_PATH + "boards";
     }
 }

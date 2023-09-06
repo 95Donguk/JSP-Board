@@ -1,14 +1,10 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-U
-%src/main/webapp/WEB-INF/css/login.css,d\7\d716162d880e9ba2b60e1a69206580b9ca4919cf
 ]
 -src/main/webapp/WEB-INF/errors/boardError.jsp,a\5\a51bf6a6efbce486fd3e88be35bdb49803b24082
 O
 src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
-T
-$src/main/webapp/WEB-INF/css/main.css,1\c\1c8a01a72383e5c19fb8224d583432414b6bb411
 Y
 )src/main/webapp/WEB-INF/layout/footer.jsp,4\d\4dd94c54670407f3c7ede20167618646e17c69e1
 Y
@@ -59,8 +55,6 @@ w
 Gsrc/main/java/edu/mzc/myboard/controller/board/BoardReadController.java,a\f\af5f83c097e28f3b295e6ae4e4f4b0ea294d8c5c
 y
 Isrc/main/java/edu/mzc/myboard/controller/board/BoardRemoveController.java,3\d\3d287342db00e34c1c44cd80bd59dd0f1fe0333f
-w
-Gsrc/main/java/edu/mzc/myboard/controller/board/BoardSaveController.java,6\e\6ea0fc98b7e446312458b4d137273793dc240376
 x
 Hsrc/main/java/edu/mzc/myboard/controller/board/BoardsReadController.java,0\5\057a2f5daeecaded25766c42151ff34da3cfe26e
 q
@@ -85,8 +79,6 @@ s
 Csrc/main/java/edu/mzc/myboard/controller/user/LogoutController.java,0\2\0215d2cff3ae28b22f33fb4eea0120fb1300ecc9
 u
 Esrc/main/java/edu/mzc/myboard/controller/user/UserFormController.java,8\f\8f9f9438db71f69e9c2992b2da0ce5ac777676eb
-u
-Esrc/main/java/edu/mzc/myboard/controller/user/UserSaveController.java,a\2\a2d138c1ccd765c0ea33426883731ba5b42557b6
 g
 7src/main/java/edu/mzc/myboard/service/BoardService.java,7\a\7a506045d213c5610ac771ffdd7d814e6c574c48
 w
@@ -103,3 +95,21 @@ g
 7src/main/java/edu/mzc/myboard/domain/board/Content.java,3\9\391e5783e6154ce16a9a7d9d36294a3e921a4fc6
 e
 5src/main/java/edu/mzc/myboard/domain/board/Title.java,a\e\aeb2bd64126f0291f4c3777200f80db02fdc8a8a
+Z
+*src/main/java/edu/mzc/myboard/vo/User.java,d\2\d2a2da374219f3ad6d7e644206a56d98dec73220
+M
+src/main/webapp/css/login.css,c\9\c953adb63298078442a1704870875d6d03cf7c6f
+L
+src/main/webapp/css/main.css,e\5\e541d2083b92473d29b1b970745c43bc2d2439f6
+d
+4src/main/java/edu/mzc/myboard/domain/board/Page.java,c\a\ca6df5c7f7812b4385c5d942aa5f0395d05eaeec
+j
+:src/main/java/edu/mzc/myboard/controller/ControllerV2.java,e\5\e5bf3019c084ccb22420e3dc14432d89bb5608e6
+y
+Isrc/main/java/edu/mzc/myboard/controller/adapter/ControllerV2Adapter.java,f\1\f1879fd5546f4cb3234f054b2924be24080c6d3e
+{
+Ksrc/main/java/edu/mzc/myboard/controller/board/BoardRegisterController.java,8\b\8b20c636d2fd0ad3be1a37f439f2c2483255b199
+z
+Jsrc/main/java/edu/mzc/myboard/controller/v2/BoardRegisterControllerV2.java,e\2\e23d90186e58714761974f5cd75db443f9706635
+y
+Isrc/main/java/edu/mzc/myboard/controller/user/UserRegisterController.java,2\0\206155228d449c78b559ce7ae9a90bea1a1c143f

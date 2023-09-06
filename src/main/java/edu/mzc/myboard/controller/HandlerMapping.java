@@ -16,13 +16,13 @@ public class HandlerMapping {
         // Key-Value 형태로 수 많은 Controller를 등록한다.
         mappings = new HashMap<>();
         mappings.put("/user/new-form.do", new UserFormController());
-        mappings.put("/user/save.do", new UserSaveController());
+        mappings.put("/user/register.do", new UserRegisterController());
         mappings.put("/login/form.do", new LoginFormController());
         mappings.put("/login.do", new LoginController());
         mappings.put("/boards.do", new BoardsReadController());
         mappings.put("/board.do", new BoardReadController());
         mappings.put("/board/new-form.do", new BoardFormController());
-        mappings.put("/board/save.do", new BoardSaveController());
+        mappings.put("/board/register.do", new BoardRegisterController());
         mappings.put("/board/edit.do", new BoardEditController());
         mappings.put("/board/remove.do", new BoardRemoveController());
         mappings.put("/logout.do", new LogoutController());

@@ -1,11 +1,16 @@
 
+z
+java:S1192"]Define a constant instead of duplicating this literal "FROM BOARD INNER JOIN USERS " 3 times.(œÀÕ³8‡…ÑÃ¦1
+m
+java:S1192"QDefine a constant instead of duplicating this literal "ON USER_ID = ID " 3 times.(’”éw8ˆ…ÑÃ¦1
 c
-java:S1192V"FDefine a constant instead of duplicating this literal "TITLE" 3 times.(Ÿ¶ÖÆ8Ç´Ñý¥1
+java:S1192q"FDefine a constant instead of duplicating this literal "TITLE" 3 times.(Ÿ¶ÖÆ8ˆ…ÑÃ¦1
 j
-java:S1192X"HDefine a constant instead of duplicating this literal "CONTENT" 3 times.(ÆðóÊþÿÿÿÿ8Ç´Ñý¥1
+java:S1192s"HDefine a constant instead of duplicating this literal "CONTENT" 3 times.(ÆðóÊþÿÿÿÿ8ˆ…ÑÃ¦1
 `
-java:S1117?">Rename "connection" which hides the field declared at line 29.(‚‹óçýÿÿÿÿ8Ò´Ñý¥1
+java:S1117T">Rename "connection" which hides the field declared at line 50.(‚‹óçýÿÿÿÿ8‘…ÑÃ¦1
 _
-java:S1117@"=Rename "statement" which hides the field declared at line 30.(¡Ÿ‹‰ùÿÿÿÿ8Ò´Ñý¥1
+java:S1117U"=Rename "statement" which hides the field declared at line 51.(¡Ÿ‹‰ùÿÿÿÿ8‘…ÑÃ¦1
+M	java:S106”"+Replace this use of System.out by a logger.(¹Í”…úÿÿÿÿ8˜…ÑÃ¦1
 P
-java:S1068".Remove this unused "BOARD_LIST" private field.(å²Ç”üÿÿÿÿ8Ù´Ñý¥1
+java:S1068".Remove this unused "BOARD_LIST" private field.(å²Ç”üÿÿÿÿ8š…ÑÃ¦1

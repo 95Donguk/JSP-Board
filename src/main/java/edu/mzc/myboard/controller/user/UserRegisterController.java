@@ -8,7 +8,7 @@ import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 @Slf4j
-public class UserSaveController implements UserController {
+public class UserRegisterController implements UserController {
 
     @Override
     public String execute(Map<String, String> paramMap, Map<String, Object> model, HttpSession session) {

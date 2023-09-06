@@ -34,13 +34,17 @@ public class BoardDAO {
                     "FROM BOARD INNER JOIN USERS " +
                     "ON USER_ID = ID " +
                     "WHERE TITLE LIKE ? " +
-                    "ORDER BY SEQ DESC";
+                    "ORDER BY SEQ DESC LIMIT ?, ?";
     private static final String BOARD_LIST_C =
             "SELECT SEQ, TITLE, CONTENT, REGDATE, CNT, USERS.NAME AS WRITER " +
                     "FROM BOARD INNER JOIN USERS " +
                     "ON USER_ID = ID " +
                     "WHERE CONTENT LIKE ? " +
-                    "ORDER BY SEQ DESC";
+                    "ORDER BY SEQ DESC LIMIT ?, ?";
+    private static final String BOARD_INCREASE_VIEW_COUNT =
+            "UPDATE BOARD SET CNT = CNT + 1 WHERE SEQ=?";
+    private static final String BOARD_COUNT =
+            "SELECT COUNT(*) AS BOARD_COUNT FROM BOARD";
 
     // JDBC 관련 변수
     private Connection connection;
@@ -92,8 +96,14 @@ public class BoardDAO {
         BoardDTO result = null;
         try {
             connection = JDBCUtil.getConnection();
-            statement = connection.prepareStatement(BOARD_GET);
+            connection.setAutoCommit(false);
 
+            statement = connection.prepareStatement(BOARD_INCREASE_VIEW_COUNT);
+            statement.setInt(1, dto.getSeq());
+            statement.executeUpdate();
+            statement.close();
+
+            statement = connection.prepareStatement(BOARD_GET);
             statement.setInt(1, dto.getSeq());
             resultSet = statement.executeQuery();
 
@@ -107,7 +117,13 @@ public class BoardDAO {
                 result.setCnt(resultSet.getInt("CNT"));
                 result.setUserId(resultSet.getString("USER_ID"));
             }
+            connection.commit();
         } catch (SQLException e) {
+            try {
+                connection.rollback();
+            } catch (SQLException ex) {
+                log.error(e.getMessage());
+            }
             log.error(e.getMessage());
         } finally {
             JDBCUtil.close(resultSet, statement, connection);
@@ -116,7 +132,7 @@ public class BoardDAO {
     }
 
     // 글 목록 검색
-    public List<BoardDTO> findAll(BoardDTO dto) {
+    public List<BoardDTO> findAll(BoardDTO dto, int sqlLimitStart, int sqlLimitEnd) {
         ArrayList<BoardDTO> boards = new ArrayList<>();
         try {
             connection = JDBCUtil.getConnection();
@@ -126,6 +142,8 @@ public class BoardDAO {
                 statement = connection.prepareStatement(BOARD_LIST_C);
             }
             statement.setString(1, "%" + dto.getSearchKeyword() + "%");
+            statement.setInt(2, sqlLimitStart);
+            statement.setInt(3, sqlLimitEnd);
 
             System.out.println(statement.toString());
             resultSet = statement.executeQuery();
@@ -144,5 +162,25 @@ public class BoardDAO {
             log.error(e.getMessage());
         }
         return boards;
+    }
+
+    public int findBoardCount() {
+        int boardCount = 0;
+        try {
+            connection = JDBCUtil.getConnection();
+            statement = connection.prepareStatement(BOARD_COUNT);
+            resultSet = statement.executeQuery();
+
+            if (resultSet.next()) {
+                boardCount = resultSet.getInt("BOARD_COUNT");
+            }
+
+        } catch (SQLException e) {
+            log.error("Error Code : {}", e.getErrorCode());
+            log.error("Message : {}", e.getMessage());
+        } finally {
+            JDBCUtil.close(resultSet, statement, connection);
+        }
+        return boardCount;
     }
 }

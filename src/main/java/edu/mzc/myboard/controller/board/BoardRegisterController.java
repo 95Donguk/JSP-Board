@@ -3,14 +3,13 @@ package edu.mzc.myboard.controller.board;
 import edu.mzc.myboard.dto.BoardDTO;
 import edu.mzc.myboard.dto.UserDTO;
 import edu.mzc.myboard.service.BoardService;
-import edu.mzc.myboard.vo.User;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 @Slf4j
-public class BoardSaveController implements BoardController {
+public class BoardRegisterController implements BoardController {
 
     @Override
     public String execute(Map<String, String> paramMap, Map<String, Object> model, HttpSession session) {
@@ -21,6 +20,9 @@ public class BoardSaveController implements BoardController {
         String content = paramMap.get("content");
         String userId = ((UserDTO) session.getAttribute("user")).getId();
 
+        log.error("title = {}", title);
+        log.error("content = {}", content);
+
         // 2. DB 연동 처리
         BoardDTO dto = new BoardDTO();
         dto.setTitle(title);
@@ -28,7 +30,7 @@ public class BoardSaveController implements BoardController {
         dto.setUserId(userId);
 
         BoardService service = new BoardService();
-        service.save(dto);
+        service.register(dto);
 
         // 3. 화면 이동
         return "/boards.do";
